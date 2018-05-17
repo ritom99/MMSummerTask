@@ -21,11 +21,35 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	/*width: 100%;*/
 }
 
 .nav li {
 	display: inline;
 }
+
+.affix {
+	top: 0;
+	width: 100%;
+}
+
+/*.affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }*/
+
+/*h2 {
+	font-family: Georgia;
+}*/
+
+.row {
+	padding: 0px 20px 10px 20px;
+}
+
+/*.articleheading {
+	font-size: 40px;
+
+}*/
 
 /*.nav a {
 	display: inline-block;
@@ -60,7 +84,7 @@ body {
 	width: 35px;
 }
 
-.search-container {
+/*.search-container {
     float: right;
   	padding: 5px 20px 5px 0px;
   	margin-top: 0px;
@@ -69,3 +93,4 @@ body {
   	border: none;
   	cursor: pointer;
   }
+*/

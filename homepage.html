@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>a</title>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="MM.SummerTask.2018/homepagecss.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="homepagecss.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+	<nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>    
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-center">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Business and Tech</a></li>
+          <li><a href="#">Sports</a></li>
+          <li><a href="#">Pictures</a></li>
+          <li><a href="#">Forum</a></li>
+      </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search articles..." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </ul>
+  </div>
+</nav>
 
-<nav class="navbar navbar-default" role="navigation">
-	<div class="navbar-header">
-    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      		<span class="icon-bar"></span>
-      		<span class="icon-bar"></span>
-      		<span class="icon-bar"></span>
-    	</button>    
-    </div>
-    <div class="navbar-collapse collapse">
-    	<ul class="nav navbar-nav navbar-center">
-        	<li><a href="#">Home</a></li>
-        	<li><a href="#">Business and Tech</a></li>
-        	<li><a href="#">Sports</a></li>
-        	<li><a href="#">Pictures</a></li>
-        	<li><a href="#">Forum</a></li>
-       	 	<li><a href="#"></a></li>
-    	</ul>
-    	<ul class="nav navbar-nav navbar-right">
-    		<form action="/action_page.php">
-      		<input type="text" placeholder="Search articles..." name="search">
-      		<button type="submit"><i class="fa fa-search"></i></button>
-    		</form>
-  		</ul>
-</div>
-	</nav>
-
-	<div class="row">
-    <div class="col-md-3 col-sm-3" style="text-align: center;">
-    	<strong>Editor's Picks</strong>
+<div class="row">
+    <div class="col-md-3 col-sm-3" style="text-align: center;"><br>
+      <strong>Editor's Picks</strong><hr>            
+        <div class="articles1">
+            <a href="#"><img src="images/" alt="img1" width="50%" height="50%">
+            <h2>Lorem Ipsum</h2></a>
+            <p class="author">By xyz</small></p>
+        </div>
     </div>
 
     <div class="col-md-6 col-sm-6" style="text-align: center;">
-    	<hr>
+      <hr>
     </div>
 
-    <div class="col-md-3 col-sm-3" style="text-align: center;">
-    	<strong>Latest posts</strong>
+    <div class="col-md-3 col-sm-3" style="text-align: center;"><br>
+      <strong>Latest posts</strong>
     </div>
-	</div>
+  </div>
+    
     
     <footer>
     <div class="container" style="text-align: center;">
-    	<p>Follow us on:</p>
-    	<a href="#" class="fa fa-facebook"></a>
-    	<a href="#" class="fa fa-twitter"></a>
+      <p>Follow us on:</p>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
     </div>
-	</footer>
+  </footer>
+
 </body>
 </html>
