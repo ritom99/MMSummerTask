@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Times New Roman;
 }
 
 /*.navbar-header {
@@ -28,10 +28,10 @@ body {
 	display: inline;
 }
 
-.affix {
+/*.affix {
 	top: 0;
 	width: 100%;
-}
+}*/
 
 /*.affix ~ .container-fluid {
      position: relative;
@@ -42,8 +42,32 @@ body {
 	font-family: Georgia;
 }*/
 
+h1 {
+	text-align: center;
+}
 .row {
 	padding: 0px 20px 10px 20px;
+}
+
+a, a:hover {
+	color: #000000;
+}
+
+a {
+	text-transform: uppercase;
+}
+
+.author {
+	font-weight: bold;
+}
+
+.info {
+	font-size: 17px;
+} 
+
+.articles1 {
+	text-align: left;
+	padding: 10px 50px 10px 50px;
 }
 
 /*.articleheading {
