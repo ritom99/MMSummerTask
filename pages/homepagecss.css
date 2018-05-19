@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Times New Roman;
+  font-family: Helvetica;
 }
 
 hr {
@@ -21,10 +21,16 @@ hr {
     margin-right: auto;
 }*/
 
+.container {
+	padding: 0px 30px 0px 30px;
+}
+
 .nav {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	font-family: Sans-serif;
+	background: white;
 	/*width: 100%;*/
 }
 
@@ -69,14 +75,18 @@ a {
 	font-size: 17px;
 } 
 
-.articles1 {
+.editorspicks {
 	text-align: left;
 	padding: 10px 50px 10px 50px;
 }
 
-.articles2 {
+.latest {
 	text-align: right;
 	padding: 10px 50px 10px 50px;
+}
+
+.article {
+	font-size: 17px;
 }
 
 /*.articleheading {
@@ -95,7 +105,7 @@ footer hr {
 }
 
 footer {
-	font-family: Verdena;
+	font-family: sans-serif;
 	font-size: 17px;
 	text-transform: uppercase;
 }
