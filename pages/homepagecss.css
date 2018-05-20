@@ -52,6 +52,24 @@ hr {
 	font-family: Georgia;
 }*/
 
+.logo {
+		float: left;
+		padding: 15px 0px 0px 20px;
+	}
+
+@media screen and (min-width: 992px) {
+	.logo {
+		display: none;
+	}
+}
+
+header {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+	font-family: Arial;
+}
+
 h1 {
 	text-align: center;
 }
