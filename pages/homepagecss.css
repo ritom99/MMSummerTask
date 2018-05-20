@@ -55,11 +55,22 @@ hr {
 h1 {
 	text-align: center;
 }
+
 .row {
 	padding: 0px 20px 10px 20px;
 }
 
-a, a:hover {
+.row .info p {
+	font-style: italic;
+}
+
+@media screen and (min-width: 992px) {
+	.info {
+		padding-top: 9%;
+	}
+}
+
+a, a:hover, a:visited {
 	color: #000000;
 }
 
