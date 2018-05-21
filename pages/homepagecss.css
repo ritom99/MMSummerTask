@@ -72,6 +72,7 @@ header {
 
 h1 {
 	text-align: center;
+	font-family: Times New Roman;
 }
 
 .row {
@@ -116,6 +117,12 @@ a {
 
 .article {
 	font-size: 17px;
+}
+
+@media screen and (min-width: 992px){
+	.articles .row h2 {
+		padding-top: 60px;
+	}
 }
 
 /*.articleheading {
