@@ -33,7 +33,7 @@
           <li><a href="bt.html">Business and Tech</a></li>
           <li><a href="sports.html">Sports</a></li>
           <li><a href="picturespage.html">Pictures</a></li>
-          <li><a href="#">Forum</a></li>
+          <li><a href="forum.html">Forum</a></li>
       </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><form action="/action_page.php">
@@ -46,6 +46,65 @@
 </nav>
 </div>
 
+<div class="forms">
+	<button onclick="document.getElementById('signup').style.display='block'" style="width: auto;"><b>Sign Up</b></button>
+	<button onclick="document.getElementById('login').style.display='block'" style="width: auto;"><b>Login</b></button>
+</div>
+
+<div id="signup" class="modal">
+	<span onclick="document.getElementById('signup').style.display='none'" class="close">&times;</span>
+	<form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p><i>Create an account.</i></p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required><br>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue; text-decoration:none; text-transform: none; ">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('signup').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+        <button type="submit" class="signupbtn"><b>Sign Up</b></button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div id="login" class="modal">
+	<span onclick="document.getElementById('login').style.display='none'" class="close">&times;</span>
+  <form class="modal-content animate" action="/action_page.php">
+    	<div class="container">
+			<h1>Login</h1>
+			<hr>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+			<label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+			<span class="psw">Forgot <a href="#" style="text-decoration:none; text-transform: none; color:dodgerblue">password?</a></span>
+			<br>
+      <button type="submit" class="loginbtn"><b>Login</b></button>
+
+      <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn"><b>Cancel</b></button>
+    	</div>
+  </form>
+</div>
+
+<hr style="width: 40%;">
 <div class="row">
     <div class="col-md-3 col-sm-3" style="text-align: center;"><br>
       <strong>Editor's Picks</strong><hr>
@@ -72,7 +131,7 @@
     </div>
 
     <div class="col-md-6 col-sm-6" style="text-align: center;"><br>
-      <hr><br>
+      <br>
       <a href="artc_tech1.html">
       <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/180521_r32092.jpg" width="80%" height="430px">
       <h2>How fortnite captured teen's minds and hearts</h2></a>
@@ -120,22 +179,32 @@
 <hr><br>
 <div class="slideshow col-md-6">
   <div class="slides">
-    <div class="number">1 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic1">
+    <div class="number">1 / 6</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic1">
     <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/4C7B6FA400000578-5751257-image-a-9_1526887076730.jpg" height=300px width="100%">
 		<p class="caption">Iniesta bids farewell to his boyhood club.</p></a>
   </div>
+	<div class="slides">
+    <div class="number">2 / 6</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic2">
+    <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/main_1200.jpg" height=300px width="100%">
+		<p class="caption">Budapest</p></a>
+  </div>
   <div class="slides">
-    <div class="number">2 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic2">
+    <div class="number">3 / 6</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic3">
     <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/4C7D2BA500000578-5752209-L.jpg" height=300px width="100%">
 		<p class="caption">Messi clinches his fifth Golden Boot award.</p></a>
   </div>
+	<div class="slides">
+    <div class="number">4 / 6</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic4">
+    <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/Cannes-Film_Festival_2018.jpg" height=300px width="100%">
+		<p class="caption">Cannes Festival</p></a>
+  </div>
   <div class="slides">
-    <div class="number">3 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic3">
+    <div class="number">5 / 6</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic5">
     <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/_101652411_gettyimages-960528214.jpg" height=300px width="100%">
 		<p class="caption">Nadal wins Italian Open.</p></a>
   </div>
   <div class="slides">
-    <div class="number">4 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic4">
+    <div class="number">6 / 6</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic6">
     <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/3000.jpg" height=300px width="100%">
 		<p class="caption">Arsene Wenger's last game as an Arsenal Manager.</p></a>
   </div>
@@ -159,6 +228,14 @@
 </footer>
 
 <script type="text/javascript">
+// var modal = document.getElementById('signup');
+
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
