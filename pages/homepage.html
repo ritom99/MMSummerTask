@@ -25,14 +25,14 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-    </button>    
+    </button>
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-center">
           <li><a href="#">Home</a></li>
           <li><a href="bt.html">Business and Tech</a></li>
-          <li><a href="#">Sports</a></li>
-          <li><a href="#">Pictures</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="picturespage.html">Pictures</a></li>
           <li><a href="#">Forum</a></li>
       </ul>
     <ul class="nav navbar-nav navbar-right">
@@ -48,7 +48,7 @@
 
 <div class="row">
     <div class="col-md-3 col-sm-3" style="text-align: center;"><br>
-      <strong>Editor's Picks</strong><hr>            
+      <strong>Editor's Picks</strong><hr>
         <div class="editorspicks">
             <a href="artc_busi4.html"><img src="/home/ritom/Desktop/MM.SummerTask.2018/images/180521_r32096web.jpg" alt="img1" width="100%" >
             <h2>A Vintner’s Quest to Create a Truly American Wine</h2></a>
@@ -60,14 +60,14 @@
             <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/180514_r32053_rd.jpg" width="100%">
             <h2>Is Capitalism a Threat to Democracy?</h2></a>
             <p class="author">By Caleb Crain</p>
-            
+
             <br><br>
 
             <a href="artc_sports1.html">
 	        <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/i.jpeg" width="100%" >
 	        <h2>Michel Platini: 1998 World Cup draw 'trickery' influenced draw</h2></a>
 	        <p class="author">By Ian Holyman</p>
-            
+
         </div>
     </div>
 
@@ -97,7 +97,7 @@
 	      <p class="author">By Himadri Buch</p>
 
 	      <br><br>
-	      
+
 	      <a href="artc_busi2.html">
 	      <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/stocks5_660_051718061808.jpg" width="100%">
 	      <h2>Five most expensive stocks in Indian market</h2>
@@ -112,18 +112,80 @@
           </a>
           <p class="author">By Michael Simon</p>
 	  </div>
-    </div>
-  	</div>
-    
-    
-    <footer><hr>
-    <div class="container" style="text-align: center;">
+  </div>
+	</div>
+
+
+<div class="row">
+<hr><br>
+<div class="slideshow col-md-6">
+  <div class="slides">
+    <div class="number">1 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic1">
+    <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/4C7B6FA400000578-5751257-image-a-9_1526887076730.jpg" height=300px width="100%">
+		<p class="caption">Iniesta bids farewell to his boyhood club.</p></a>
+  </div>
+  <div class="slides">
+    <div class="number">2 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic2">
+    <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/4C7D2BA500000578-5752209-L.jpg" height=300px width="100%">
+		<p class="caption">Messi clinches his fifth Golden Boot award.</p></a>
+  </div>
+  <div class="slides">
+    <div class="number">3 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic3">
+    <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/_101652411_gettyimages-960528214.jpg" height=300px width="100%">
+		<p class="caption">Nadal wins Italian Open.</p></a>
+  </div>
+  <div class="slides">
+    <div class="number">4 / 4</div><a href="/home/ritom/Desktop/MM.SummerTask.2018/pages/picturespage.html#pic4">
+    <img src="/home/ritom/Desktop/MM.SummerTask.2018/images/3000.jpg" height=300px width="100%">
+		<p class="caption">Arsene Wenger's last game as an Arsenal Manager.</p></a>
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div class="col-md-6">
+
+</div>
+</div>
+
+<footer><hr>
+<div class="container" style="text-align: center;">
       <p>Follow us on:</p>
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-twitter"></a>
       <br><br>
-    </div>
-  </footer>
+</div>
+</footer>
+
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  /*var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");*/
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      // dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
 </body>
 </html>

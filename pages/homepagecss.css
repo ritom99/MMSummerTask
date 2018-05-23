@@ -85,7 +85,7 @@ h1 {
 
 @media screen and (min-width: 992px) {
 	.info {
-		padding-top: 9%;
+		padding-top: 0;
 	}
 }
 
@@ -103,7 +103,7 @@ a {
 
 .info {
 	font-size: 17px;
-} 
+}
 
 .editorspicks {
 	text-align: left;
@@ -119,11 +119,24 @@ a {
 	font-size: 17px;
 }
 
-@media screen and (min-width: 992px){
+.container .row {
+	display: flex;
+	align-items: center;
+}
+
+.piccap {
+  text-align: right;
+}
+
+.piccap p {
+  font-style: italic;
+}
+
+/*@media screen and (min-width: 992px){
 	.articles .row h2 {
 		padding-top: 60px;
 	}
-}
+}*/
 
 /*.articleheading {
 	font-size: 40px;
@@ -135,6 +148,62 @@ a {
 	padding: 10px;
 }
 */
+
+.slideshow {
+  /* height: 500px; */
+  padding: 0px 60px 0px 60px;
+
+}
+
+.number {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.slides {
+	display: none;
+}
+
+.caption {
+  /* display = none; */
+  text-align: center;
+  /* margin-top: -100px; */
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.caption a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: auto;
+  width: auto;
+  padding: 16px;
+  margin-top: -220px;
+  /* margin-top: -50px; */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+	right: 60px;
+}
+
+.next:hover, .prev:hover {
+	background-color: rgba(0,0,0,0.7);
+}
 
 footer hr {
 	border-color: rgb(1,1,1);
