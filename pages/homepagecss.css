@@ -109,6 +109,10 @@ header {
     opacity: 0.9;
 }
 
+button:visited {
+  color: inherit;
+}
+
 button:hover {
     opacity:1;
 }
